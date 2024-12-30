@@ -1,0 +1,371 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    color: white;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: #10172b;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header {
+    margin: 4px;
+    width: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center-header {
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn button theo chiều ngang */
+    align-items: center; /* Căn button theo chiều dọc */
+    width: 40%;
+}
+
+.buy-ticket {
+    height: 40px;
+    width: 40%; /* Điều chỉnh lại width của button */
+    background-color: rgb(243,234,40);
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center; /* Căn giữa nội dung trong button */
+}
+
+.center-header .buy-ticket:hover {
+    background: radial-gradient(274px at 7.4% 17.9%, rgb(82, 107, 248) 0.3%, rgb(167, 139, 252) 90.5%);
+}
+
+.center-header .buy-ticket p {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+}
+
+.right-header {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.search-txt {
+    width: 80%;
+    height: 40px;
+    border-radius: 16px;
+    color: black;
+}
+
+    .search-txt::placeholder {
+        text-align: center;
+    }
+
+.icon-search {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.login-container {
+    width: 40%;
+}
+
+.txt {
+    display: flex;
+}
+
+    .txt li {
+        list-style: none;
+        text-decoration: none;
+    }
+
+.link {
+    margin: 12px;
+    text-decoration: none;
+    background-color: #10172b;
+}
+
+.login-container {
+    margin: 12px;
+}
+
+/* ket thuc phan header */
+.main-content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.img-container {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}
+
+
+.img-content {
+    max-width: 320px;
+    margin: 12px;
+}
+
+.img {
+    max-width: 320px;
+    border-radius: 12px;
+}
+
+.img-footer {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .img-footer .buy-ticket p {
+        color: black;
+    }
+
+    .img-footer a {
+        margin-right: 4px;
+    }
+
+.movie-showing {
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    border: 1px white solid;
+    border-radius: 12px;
+    background-color: #10172b;
+}
+
+    .movie-showing:hover {
+        background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+    }
+
+    .movie-showing p {
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+.slider-container {
+    margin-top: 40px;
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+h2 {
+    margin: 20px;
+}
+/* Footer */
+footer {
+    background-color: #10172b; /* Thay đổi màu nền */
+    color: #fff; /* Thay đổi màu chữ */
+    padding: 24px 0; /* Thêm padding ở trên và dưới */
+}
+
+    /* Tiêu đề */
+    footer h2 {
+        margin-bottom: 16px; /* Khoảng cách dưới tiêu đề */
+    }
+
+/* Danh sách icon */
+.list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px; /* Khoảng cách dưới danh sách icon */
+}
+
+/* Mỗi container chứa một icon */
+.icon-container {
+    width: 72px;
+    text-align: center;
+    margin: 0 12px;
+}
+
+/* Icon */
+.icon {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 8px; /* Thêm padding cho icon */
+}
+
+/* Phần nội dung văn bản */
+.text {
+    text-align: center;
+}
+
+/* Phần liên hệ */
+.text-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; /* Khoảng cách trên phần liên hệ */
+}
+
+/* Icon liên hệ */
+.ic-contact {
+    margin-right: 8px; /* Khoảng cách phải giữa icon và nội dung văn bản */
+}
+
+/* Điện thoại và email */
+.email-contact,
+.phone-contact {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+}
+
+/* Số điện thoại */
+.phone-number {
+    margin-left: 4px; /* Khoảng cách bên trái giữa icon và số điện thoại */
+}
+/* Khi màn hình nhỏ hơn 768px */
+@media only screen and (max-width: 768px) {
+    /* Phần Header */
+    header {
+        display: flex;
+        flex-direction: column; /* Chuyển sang layout dạng cột */
+    }
+
+    .left-header, .center-header, .right-header {
+        width: 100%; /* Chiều rộng 100% để căn giữa trên màn hình */
+        text-align: center; /* Căn giữa nội dung */
+    }
+
+    .logo {
+        width: 100px; /* Đặt chiều rộng mong muốn */
+        height: auto; /* Chiều cao sẽ tự động điều chỉnh để giữ tỷ lệ khung hình */
+    }
+
+    .search {
+        margin: 12px auto; /* Canh giữa */
+    }
+    /* Phần Đăng ký và Đăng nhập */
+    .txt {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Căn chữ theo chiều dọc */
+    }
+
+
+    .link {
+        margin: 0 8px; /* Thêm khoảng cách */
+        white-space: nowrap; /* Đảm bảo chữ không bị ngắt dòng */
+    }
+
+
+    /* Phần nội dung chính */
+    .main-content h1 {
+        text-align: center; /* Căn giữa tiêu đề */
+        margin: 20px 0; /* Khoảng cách trên và dưới */
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column; /* Chuyển sang layout dạng cột */
+        align-items: center; /* Căn giữa theo chiều ngang */
+    }
+
+    .img-content {
+        width: 100%; /* Chiều rộng 100% để căn giữa */
+        max-width: 320px; /* Đảm bảo ảnh không quá rộng trên màn hình nhỏ */
+        margin: 0 auto 12px auto; /* Canh giữa và thêm khoảng cách dưới */
+    }
+
+    .img-footer {
+        text-align: center; /* Căn giữa nội dung */
+    }
+
+    .movie-showing {
+        width: 200px; /* Độ rộng cố định */
+        margin: 20px auto; /* Canh giữa */
+    }
+
+    /* Phần Đăng ký và Đăng nhập */
+    .txt {
+        display: flex;
+        justify-content: center;
+        margin: 12px; /* Thêm khoảng cách */
+    }
+
+    .link {
+        margin: 0 8px; /* Thêm khoảng cách */
+    }
+
+    footer {
+        padding: 16px 0; /* Giảm padding */
+    }
+
+    .list-icon {
+        flex-wrap: wrap; /* Cho phép các icon chuyển dòng khi không đủ chỗ */
+        margin-bottom: 16px; /* Giảm khoảng cách dưới danh sách icon */
+    }
+
+    .icon-container {
+        margin: 8px; /* Giảm margin giữa các icon */
+    }
+
+    .text-contact {
+        flex-direction: column; /* Chuyển layout thành dạng cột */
+        margin-top: 12px; /* Giảm khoảng cách trên phần liên hệ */
+    }
+
+    .email-contact,
+    .phone-contact {
+        margin: 4px 8px; /* Giảm margin của phần liên hệ */
+    }
+}

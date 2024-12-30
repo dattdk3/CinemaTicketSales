@@ -1,0 +1,436 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    color: white;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: #10172b;
+    width: 100%;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header {
+    margin: 4px;
+    width: 5%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center-header {
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn button theo chiều ngang */
+    align-items: center; /* Căn button theo chiều dọc */
+    width: 40%;
+}
+
+.buy-ticket {
+    height: 40px;
+    width: 40%; /* Điều chỉnh lại width của button */
+    background-color: rgb(243,234,40);
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center; /* Căn giữa nội dung trong button */
+}
+
+.buy-ticket2 {
+    color: black;
+    height: 40px;
+    width: 40%; /* Điều chỉnh lại width của button */
+    background-color: rgb(243,234,40);
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center; /* Căn giữa nội dung trong button */
+    justify-content:center;
+}
+
+.center-header .buy-ticket:hover {
+    background: radial-gradient(274px at 7.4% 17.9%, rgb(82, 107, 248) 0.3%, rgb(167, 139, 252) 90.5%);
+}
+
+.center-header .buy-ticket p {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+}
+
+.right-header {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.search-txt {
+    width: 80%;
+    height: 40px;
+    border-radius: 16px;
+    color: black;
+}
+
+    .search-txt::placeholder {
+        text-align: center;
+    }
+
+.icon-search {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.login-container {
+    width: 40%;
+}
+
+.txt {
+    display: flex;
+}
+
+    .txt li {
+        list-style: none;
+        text-decoration: none;
+    }
+
+.link {
+    margin: 12px;
+    text-decoration: none;
+}
+
+.login-container {
+    margin: 12px;
+}
+/* hết phần header */
+/* main content */
+.main-content {
+    width: 60%;
+    height: 80%;
+    margin: auto;
+}
+#btn_buy_ticket {
+    height: 40px;
+    width: 40%; /* Điều chỉnh lại width của button */
+    background-color: rgb(243,234,40);
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center; /* Căn giữa nội dung trong button */
+}
+
+.main-content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.payment-step-txt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+    .payment-step-txt p {
+        font-size: 30px;
+        text-align: center;
+        margin: 30px 0px;
+    }
+
+.step {
+    color: yellow;
+}
+
+#middle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+}
+
+#bttn-submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 50%;
+    background-color: rgb(243,234,40);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#right-middle-content {
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+}
+#add_movie_table {
+    width: 90%;
+    border: blueviolet 2px solid;
+    border-right: none;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+    #add_movie_table th {
+        border-bottom: gray 1px solid;
+        border-right: gray 1px solid;
+        color: #10172b;
+    }
+
+    #add_movie_table td {
+        border-right: gray 1px solid;
+    }
+
+#add_movie_table {
+    background-color: aliceblue;
+}
+
+.option-room {
+    color: #10172b;
+}
+
+.table-input {
+    width: 100%;
+    height: 30px;
+    color: #10172b;
+    border: 1px dotted gray;
+}
+
+.add-showTime {
+    color: #10172b;
+    margin: 20px;
+    margin-right: 0px;
+}
+
+#Movie_Name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 10px 20px;
+}
+
+.Movie-info-group1 {
+    margin: 10px;
+}
+
+    .Movie-info-group1 .Movie-info-title {
+        margin-top: 10px;
+    }
+
+.Movie-info-group {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+    .Movie-info-group p {
+        margin-right: 20px;
+    }
+
+.Movie-info-title {
+    color: yellow;
+}
+
+.Movie-info {
+    font: bold;
+    font-size: 20px;
+}
+
+#Money-to-Pay {
+    margin-top: 20px;
+    width: 100%;
+    border-top: 2px dotted white;
+    display: flex;
+}
+
+    #Money-to-Pay p {
+        margin-left: 10px;
+        margin-top: 10px;
+        font: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+/* Hết phần main-content */
+/* footer */
+footer {
+    background-color: #10172b; /* Thay đổi màu nền */
+    color: #fff; /* Thay đổi màu chữ */
+    padding: 28px 0; /* Thêm padding ở trên và dưới */
+}
+
+    /* Tiêu đề */
+    footer h2 {
+        margin-bottom: 16px; /* Khoảng cách dưới tiêu đề */
+    }
+
+/* Danh sách icon */
+.list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px; /* Khoảng cách dưới danh sách icon */
+}
+
+/* Mỗi container chứa một icon */
+.icon-container {
+    width: 72px;
+    text-align: center;
+    margin: 0 12px;
+}
+
+/* Icon */
+.icon {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 8px; /* Thêm padding cho icon */
+}
+
+/* Phần nội dung văn bản */
+.text {
+    text-align: center;
+}
+
+/* Phần liên hệ */
+.text-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; /* Khoảng cách trên phần liên hệ */
+}
+
+/* Icon liên hệ */
+.ic-contact {
+    margin-right: 8px; /* Khoảng cách phải giữa icon và nội dung văn bản */
+}
+
+/* Điện thoại và email */
+.email-contact,
+.phone-contact {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+}
+
+/* Số điện thoại */
+.phone-number {
+    margin-left: 4px; /* Khoảng cách bên trái giữa icon và số điện thoại */
+}
+
+/* Khi màn hình nhỏ hơn 780px */
+@media only screen and (max-width: 768px) {
+    /* Phần Header */
+    header {
+        display: flex;
+        flex-direction: column; /* Chuyển sang layout dạng cột */
+    }
+
+    .left-header, .center-header, .right-header {
+        width: 100%; /* Chiều rộng 100% để căn giữa trên màn hình */
+        text-align: center; /* Căn giữa nội dung */
+    }
+
+    .logo {
+        width: 100px; /* Đặt chiều rộng mong muốn */
+        height: auto; /* Chiều cao sẽ tự động điều chỉnh để giữ tỷ lệ khung hình */
+    }
+
+    .search {
+        margin: 12px auto; /* Canh giữa */
+    }
+    /* Phần Đăng ký và Đăng nhập */
+    .txt {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Căn chữ theo chiều dọc */
+    }
+
+
+    .link {
+        margin: 0 8px; /* Thêm khoảng cách */
+        white-space: nowrap; /* Đảm bảo chữ không bị ngắt dòng */
+    }
+
+
+    /* Phần nội dung chính */
+    .main-content {
+        width: 90%;
+    }
+
+        .main-content h1 {
+            text-align: center; /* Căn giữa tiêu đề */
+            margin: 20px 0; /* Khoảng cách trên và dưới */
+            font-size: 20px;
+        }
+
+    .payment-step-txt p {
+        font-size: 20px;
+    }
+
+    #middle {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    #left-middle-content {
+        width: 100%;
+    }
+
+    #right-middle-content {
+        width: 100%;
+    }
+
+    /* footer */
+    footer {
+        padding: 16px 0; /* Giảm padding */
+    }
+
+    .list-icon {
+        flex-wrap: wrap; /* Cho phép các icon chuyển dòng khi không đủ chỗ */
+        margin-bottom: 16px; /* Giảm khoảng cách dưới danh sách icon */
+    }
+
+    .icon-container {
+        margin: 8px; /* Giảm margin giữa các icon */
+    }
+
+    .text-contact {
+        flex-direction: column; /* Chuyển layout thành dạng cột */
+        margin-top: 12px; /* Giảm khoảng cách trên phần liên hệ */
+    }
+
+    .email-contact, .phone-contact {
+        margin: 4px 8px; /* Giảm margin của phần liên hệ */
+        justify-content: center;
+    }
+}
+body {
+}

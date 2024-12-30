@@ -1,0 +1,396 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  color: white;
+}
+html
+{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container
+{
+  box-sizing: border-box;
+  background-color: #10172b;
+  width: 100%;
+}
+header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-header
+{
+  margin: 4px;
+  width: 10%;
+}
+
+a
+{
+  text-decoration: none;
+}
+.center-header {
+  display: flex; /* Sử dụng flexbox để căn giữa */
+  justify-content: center; /* Căn button theo chiều ngang */
+  align-items: center; /* Căn button theo chiều dọc */
+  width: 40%;
+}
+
+.buy-ticket {
+  height: 40px;
+  width: 40%; /* Điều chỉnh lại width của button */
+  background-color: rgb(243,234,40);
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center; /* Căn giữa nội dung trong button */
+}
+
+.center-header .buy-ticket:hover
+{
+  background: radial-gradient(274px at 7.4% 17.9%, rgb(82, 107, 248) 0.3%, rgb(167, 139, 252) 90.5%);
+}
+.center-header .buy-ticket p
+{
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 200;
+  color: black;
+}
+.right-header
+{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.search
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.search-txt
+{
+  width: 80%;
+  height: 40px;
+  border-radius: 16px;
+  color: black;
+}
+.search-txt::placeholder
+{
+  text-align: center;
+}
+.icon-search
+{
+  margin-left: 5px;
+  cursor: pointer;
+  
+}
+.login-container
+{
+  width: 40%;
+}
+.txt
+{
+  display: flex;
+}
+.txt li
+{
+  list-style: none;
+  text-decoration: none;
+}
+.link
+{
+  margin: 12px;
+  text-decoration: none;
+}
+
+.login-container
+{
+  margin: 12px;
+}
+/*het phan header*/
+.main-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+form{
+    
+}
+
+#add-movie-table{
+    width: 90%;
+    border:blueviolet 2px solid;
+    border-right: none; 
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 10px;
+    
+}
+#add-movie-table th {
+    border-bottom: gray 1px solid;
+    border-right: gray 1px solid;
+    color: #10172b;
+}
+
+#add-movie-table td {
+    border-right: gray 1px solid;
+}
+
+#add-movie-table{
+    background-color: aliceblue;
+    
+}
+.option-room{
+    color: #10172b;
+}
+
+.table-input{
+    width: 100%;
+    height: 30px;
+    color: #10172b;
+    border: 1px dotted gray;
+}
+
+.add-showTime{
+    color: #10172b;
+    margin: 20px ;
+    margin-right: 0px;
+    
+}
+
+.addTime{
+    border: navajowhite 0.3px dotted;
+    width: 30%;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 24px;
+    
+    
+}
+
+#btn-addTime{
+    border-radius: 50px;
+    width: 14%;
+    background-color:#161e35 ;
+    border: 1px solid rgb(243,234,40);
+    color: rgb(243,234,40);
+}
+
+#btn-addTime:hover{
+    background: radial-gradient(274px at 7.4% 17.9%, rgb(82, 107, 248) 0.3%, rgb(167, 139, 252) 90.5%);
+}
+
+#btnAdd{
+    color: #10172b;
+    height: 40px;
+    width: 10%;
+    margin: 40px;
+    border-radius: 50px;
+    background-color: rgb(243,234,40);
+}
+
+#Btndelete {
+    color: #10172b;
+    height: 40px;
+    width: 10%;
+    margin: 40px;
+    border-radius: 50px;
+    background-color: rgb(243,234,40);
+}
+
+#btnAdd:hover{
+    background: radial-gradient(274px at 7.4% 17.9%, rgb(82, 107, 248) 0.3%, rgb(167, 139, 252) 90.5%);
+}
+
+/* Footer */
+footer {
+    background-color:#10172b ; /* Thay đổi màu nền */
+    color: #fff; /* Thay đổi màu chữ */
+    padding: 24px 0; /* Thêm padding ở trên và dưới */
+  }
+  
+  /* Tiêu đề */
+  footer h2 {
+    margin-bottom: 16px; /* Khoảng cách dưới tiêu đề */
+  }
+  
+  /* Danh sách icon */
+  .list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px; /* Khoảng cách dưới danh sách icon */
+  }
+  
+  /* Mỗi container chứa một icon */
+  .icon-container {
+    width: 72px;
+    text-align: center;
+    margin: 0 12px;
+  }
+  
+  /* Icon */
+  .icon {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 8px; /* Thêm padding cho icon */
+  }
+  
+  /* Phần nội dung văn bản */
+  .text {
+    text-align: center;
+  }
+  
+  /* Phần liên hệ */
+  .text-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; /* Khoảng cách trên phần liên hệ */
+  }
+  
+  /* Icon liên hệ */
+  .ic-contact {
+    margin-right: 8px; /* Khoảng cách phải giữa icon và nội dung văn bản */
+  }
+  
+  /* Điện thoại và email */
+  .email-contact,
+  .phone-contact {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+  }
+  
+  /* Số điện thoại */
+  .phone-number {
+    margin-left: 4px; /* Khoảng cách bên trái giữa icon và số điện thoại */
+  }
+
+
+
+
+/* reponsive header*/
+@media only screen and (max-width: 768px) {
+    /* Phần Header */
+  header {
+    display: flex;
+    flex-direction: column; /* Chuyển sang layout dạng cột */
+  }
+  
+  .left-header, .center-header, .right-header {
+    width: 100%; /* Chiều rộng 100% để căn giữa trên màn hình */
+    text-align: center; /* Căn giữa nội dung */
+  }
+  .logo {
+    width: 100px; /* Đặt chiều rộng mong muốn */
+    height: auto; /* Chiều cao sẽ tự động điều chỉnh để giữ tỷ lệ khung hình */
+  }
+  
+  .search {
+    margin: 12px auto; /* Canh giữa */
+  }
+  /* Phần Đăng ký và Đăng nhập */
+  .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Căn chữ theo chiều dọc */
+  }
+  
+  
+  .link {
+    margin: 0 8px; /* Thêm khoảng cách */
+    white-space: nowrap; /* Đảm bảo chữ không bị ngắt dòng */
+  }
+  /*main */
+  /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #10172b; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px dotted #10172b; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+        color: #10172b;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Tên phim"; }
+	td:nth-of-type(2):before { content: "Ảnh bìa"; }
+	td:nth-of-type(3):before { content: "Thời lượng"; }
+	td:nth-of-type(4):before { content: "Quốc gia"; }
+	td:nth-of-type(5):before { content: "Đạo diễn"; }
+	td:nth-of-type(6):before { content: "diễn viên"; }
+	td:nth-of-type(7):before { content: "Ngày công chiếu"; }
+	td:nth-of-type(8):before { content: "Nội dung phim"; }
+	td:nth-of-type(9):before { content: "Phòng chiếu"; }
+	td:nth-of-type(10):before { content: "Thời gian chiếu"; }
+
+  .addTime{
+    display: inline-block;
+    width: 100%;
+  }
+
+  #btnAdd{
+    width: fit-content;
+  }
+
+
+  
+  /*footer*/
+  footer {
+    padding: 16px 0; /* Giảm padding */
+  }
+  
+  .list-icon {
+    flex-wrap: wrap; /* Cho phép các icon chuyển dòng khi không đủ chỗ */
+    margin-bottom: 16px; /* Giảm khoảng cách dưới danh sách icon */
+  }
+
+  .icon-container {
+    margin: 8px; /* Giảm margin giữa các icon */
+  }
+
+  .text-contact {
+    flex-direction: column; /* Chuyển layout thành dạng cột */
+    margin-top: 12px; /* Giảm khoảng cách trên phần liên hệ */
+  }
+
+  .email-contact,
+  .phone-contact {
+    margin: 4px 8px; /* Giảm margin của phần liên hệ */
+  }
+}  

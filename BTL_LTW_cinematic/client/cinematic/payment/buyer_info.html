@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buyer_info.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="left-header">
+              <img src="/client/cinematic/assets/img/header-logo.png" alt="loggo" class="logo">            
+            </div>
+            <div class="center-header">
+              <button class="btn buy-ticket"><p>Đặt vé ngay</p></button>
+            </div>
+            <div class="right-header">    
+              <div class="search">
+                <input type="text" placeholder="tìm kiếm tại đây" class="search-txt">
+                <i class="ti-search icon-search"></i>
+              </div>
+              <div class="login-container">
+                <ul class="txt">
+                  <a href="#DangNhap" class="link">Đăng nhập</a>
+                  <a href="#DangKi" class="link">Đăng kí</a>
+                </ul>
+              </div>
+      
+            </div>
+          </header>
+        
+        <div class="main-content">
+            <div id="upper-content">
+                <h1>TRANG THANH TOÁN</h1>
+                <div class="payment-step-txt">
+                    <p id="buyer">Thông tin khách hàng-</p>
+                    <p>-Thanh toán-</p>
+                    <p>-Thông tin về phim</p>
+                </div>
+            </div>                                                         
+                <div id="middle"> 
+                    <div id="left-middle-content">             
+                        <form> 
+                            <label for="buyer-fullName">Họ và tên</label>
+                            <div class="buyer_info_input">
+                                <input type="text" id="buyer-fullName" placeholder="Nhập họ và tên" class="input" required>
+                            </div>
+                            <label for="buyer-fullName">Số điện thoại</label>
+                            <div class="buyer-phonenum">
+                                <input type="text" id="buyer-phonenum" placeholder="Nhập số điện thoại" class="input" required>
+                            </div>
+                            <label for="buyer-email">Email</label>
+                            <div class="buyer_info_input">
+                                <input type="text" id="buyer-email" placeholder="Nhập email" class="input" required>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="check-age-buyer" value="Đảm bảo số tuổi">
+                                <label for="check-age-buyer">Đảm bảo mua vé đúng số tuổi quy định</label>
+                            </div>                        
+                            <div>
+                                <input type="checkbox" id="check-Dieu-Khoan" value="Đảm bảo điều khoản">
+                                <label for="check-age-buyer">Đồng ý với điều khoản cinestar</label>
+                            </div>
+                            <input type="submit" value="Tiếp Tục" id="bttn-submit">                        
+                        </form>
+                    </div> 
+                    <div id="right-middle-content">
+                        <div>
+                            <h2 id="Movie-Name">Quỷ thuật</h2>
+                            <div class="Movie-info-group1">                                
+                                <p class="Movie-info">Cinestar Quốc Thanh</p>
+                                <p>271 Nguyễn trãi, Phường Nguyễn Cư Trinh, Quận 1, Thành Phố Hồ Chí Minh</p>                                
+                                <p class="Movie-info-title">Thời gian</p>
+                                <p class="Movie-info">08:05 Thứ Sáu 05/04/2024</p>
+                            </div>
+                            <div class="Movie-info-group">
+                                <div>
+                                    <p class="Movie-info-title">Phòng chiếu</p>
+                                    <p class="Movie-info">06</p>
+                                </div>                           
+                                <div>
+                                    <p class="Movie-info-title">Số lượng vé</p>
+                                    <p class="Movie-info">1</p>
+                                </div>
+                                <div>
+                                    <p class="Movie-info-title">Loại vé</p>
+                                    <p class="Movie-info">Người lớn</p>
+                                </div>
+                            </div>
+                            <div class="Movie-info-group">
+                                <div>
+                                    <p class="Movie-info-title">loại ghế</p>
+                                    <p class="Movie-info">Thường</p>
+                                </div>
+                                <div>
+                                    <p class="Movie-info-title">Số vé</p>
+                                    <p class="Movie-info">J08</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div id="Money-to-Pay">
+                            <p>Số tiền cần thanh toán: 45000 Đ</p>
+                        </div>                       
+                    </div>
+                </div>                                                                   
+        </div>
+        <footer>
+            <center><h2>CINEMATIC</h2></center>
+            <div class="list-icon">
+              <div class="icon-container">
+                <div class="icon">
+                  <i class="item-icon ti-facebook"></i>
+                </div>
+                <p>Facebook</p>
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <i class="item-icon ti-instagram"></i>
+                </div>
+                <p>Instagram</p>
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <i class="item-icon ti-youtube"></i>
+                </div>
+                <p>Youtube</p>
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <i class="item-icon ti-twitter"></i>
+                </div>
+                <p>Twitter</p>
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <i class="item-icon ti-google"></i>
+                </div>
+                <p>Google</p>
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <i class="item-icon ti-linkedin"></i>
+                </div>
+                <p>Linkedin</p>
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <i class="item-icon ti-pinterest"></i>
+                </div>
+                <p>Pinterest</p>
+              </div>
+            </div>
+            <div class="text">
+              <center><p>We work with clients form all over. Get in touch with us!</p></center>
+              <div class="text-contact">
+                <div class="email-contact">
+                  <i class="ic-contact ti-email"></i>
+                  <p>nhom11@gmail.com</p>
+                </div>
+                <div class="phone-contact">
+                  <i class="ti-mobile"></i>
+                  <p class="phone-number">0888.8888.888</p>
+                </div>
+            </div>
+              </div>
+          </footer>
+    </div>
+</body>
+</html>

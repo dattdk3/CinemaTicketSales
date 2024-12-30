@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Số Tăng Giảm</title>
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .value {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+    .button {
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+    }
+    .button:hover {
+        background-color: #ddd;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <button id="decrement" class="button">-</button>
+    <div id="value" class="value">0</div>
+    <button id="increment" class="button">+</button>
+</div>
+
+<script>
+    // JavaScript để tăng giảm giá trị khi click vào nút "Cộng" và "Trừ"
+    document.addEventListener("DOMContentLoaded", function() {
+        var valueElement = document.getElementById("value");
+        var incrementButton = document.getElementById("increment");
+        var decrementButton = document.getElementById("decrement");
+        var value = 0;
+
+        function updateValue(newValue) {
+            value = newValue;
+            valueElement.textContent = value;
+        }
+
+        function incrementValue() {
+            updateValue(value + 1);
+        }
+
+        function decrementValue() {
+            if (value > 0) { // Kiểm tra giá trị lớn hơn 0
+                updateValue(value - 1);
+            }
+        }
+
+        incrementButton.addEventListener("click", incrementValue);
+        decrementButton.addEventListener("click", decrementValue);
+    });
+</script>
+
+</body>
+</html>

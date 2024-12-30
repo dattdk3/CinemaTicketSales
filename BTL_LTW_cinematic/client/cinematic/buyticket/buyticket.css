@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    color: white;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: #10172b;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header {
+    margin: 4px;
+    width: 10%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center-header {
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn button theo chiều ngang */
+    align-items: center; /* Căn button theo chiều dọc */
+    width: 40%;
+}
+
+.buy-ticket {
+    color: black;
+    height: 40px;
+    width: 40%; /* Điều chỉnh lại width của button */
+    background-color: rgb(243,234,40);
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center; /* Căn giữa nội dung trong button */
+}
+
+.center-header .buy-ticket:hover {
+    background: radial-gradient(274px at 7.4% 17.9%, rgb(82, 107, 248) 0.3%, rgb(167, 139, 252) 90.5%);
+}
+
+.center-header .buy-ticket p {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+}
+
+.right-header {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.search-txt {
+    width: 80%;
+    height: 40px;
+    border-radius: 16px;
+    color: black;
+}
+
+    .search-txt::placeholder {
+        text-align: center;
+    }
+
+.icon-search {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.login-container {
+    width: 40%;
+}
+
+.txt {
+    display: flex;
+}
+
+    .txt li {
+        list-style: none;
+        text-decoration: none;
+    }
+
+.link {
+    margin: 12px;
+    text-decoration: none;
+}
+
+.login-container {
+    margin: 12px;
+}
+/* ket thuc header */
+
+.movie-infor {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.left-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+    .left-content img {
+        width: 60%;
+        border-radius: 12px;
+    }
+
+.right-content {
+    width: 50%;
+}
+
+.txt-content-up {
+    margin-top: 5%;
+}
+
+.txt-container {
+    display: flex;
+    align-items: center;
+}
+
+    .txt-container .icon {
+        color: yellow;
+    }
+
+.txt-content {
+    margin: 4px;
+}
+
+.txt-content-down {
+    margin-top: 5%;
+}
+
+.des-content {
+    display: flex;
+    align-items: center;
+}
+
+.txt-content-down .des-content .txt-content, label {
+    font-size: 12px;
+}
+
+.movie-content {
+    margin-top: 5%;
+    width: 80%;
+}
+
+.showtime-container h3 {
+    font-size: 36px;
+}
+
+.st-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-st {
+    margin: 12px;
+    height: 100px;
+    width: 10%;
+    border: 1px solid rgb(243,234,40);
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.txt-st-child {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .txt-st-child p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+.txt-st :hover {
+    background-color: rgb(243,234,40);
+    border-radius: 12px;
+    color: rgb(102,51,153);
+}
+
+.time-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+    .time-list li {
+        width: 60px;
+        list-style: none;
+        margin: 12px;
+        border: 1px solid rgb(82, 69, 95);
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+.type-ticket-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.info-ticket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    margin: 12px;
+    border: 1px solid rgb(94, 98, 107);
+    border-radius: 12px;
+}
+
+    .info-ticket-container ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px;
+        width: 20%;
+    }
+
+    .info-ticket-container li {
+        margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    }
+
+.count {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: rgb(148,163,184);
+    border-radius: 12px;
+}
+
+.button {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(148,163,184);
+}
+
+    .button:hover {
+    }
+
+.value {
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.select-seat-container {
+    margin-bottom: 40px;
+}
+
+.screen-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+    .screen-container img {
+        position: absolute;
+    }
+
+    .screen-container p {
+        margin-top: 10px;
+        position: relative;
+    }
+
+.list-seat {
+    margin-top: 60px;
+}
+
+.seat-container {
+    display: flex;
+    justify-content: center;
+}
+
+    .seat-container ul {
+        display: flex;
+    }
+
+        .seat-container ul li {
+            margin: 8px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+.tseat-container {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.type-seat {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+    .type-seat p {
+        margin: 4px;
+        text-transform: uppercase;
+    }
+
+.cash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .cash-container button {
+        background-color: rgb(243,234,40);
+        height: 100px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(243,234,40);
+        border-radius: 12px;
+        background-color: rgb(243,234,40);
+        font-size: 32px;
+        color: rgb(102,51,153);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+    }
+
+.money-total-container {
+    margin: 20px;
+    height: 100px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(243,234,40);
+    border-radius: 12px;
+    background-color: rgb(243,234,40);
+}
+
+    .money-total-container label {
+        font-size: 32px;
+        color: rgb(102,51,153);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .money-total-container p {
+        font-size: 32px;
+        font-weight: 500;
+        color: rgb(102,51,153);
+    }
+/* Footer */
+footer {
+    background-color: #10172b; /* Thay đổi màu nền */
+    color: #fff; /* Thay đổi màu chữ */
+    padding: 24px 0; /* Thêm padding ở trên và dưới */
+}
+
+    /* Tiêu đề */
+    footer h2 {
+        margin-bottom: 16px; /* Khoảng cách dưới tiêu đề */
+    }
+
+/* Danh sách icon */
+.list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px; /* Khoảng cách dưới danh sách icon */
+}
+
+/* Mỗi container chứa một icon */
+.icon-container {
+    width: 72px;
+    text-align: center;
+    margin: 0 12px;
+}
+
+/* Icon */
+.icon {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 8px; /* Thêm padding cho icon */
+}
+
+/* Phần nội dung văn bản */
+.text {
+    text-align: center;
+}
+
+/* Phần liên hệ */
+.text-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; /* Khoảng cách trên phần liên hệ */
+}
+
+/* Icon liên hệ */
+.ic-contact {
+    margin-right: 8px; /* Khoảng cách phải giữa icon và nội dung văn bản */
+}
+
+/* Điện thoại và email */
+.email-contact,
+.phone-contact {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+}
+
+/* Số điện thoại */
+.phone-number {
+    margin-left: 4px; /* Khoảng cách bên trái giữa icon và số điện thoại */
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./addFilm.css">
+    <title>Thêm phim</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="left-header">
+                <img src="/client/cinematic/assets/img/header-logo.png" alt="loggo" class="logo">
+
+            </div>
+            <div class="center-header">
+                <button class="btn buy-ticket">
+                    <p>Đặt vé ngay</p>
+                </button>
+            </div>
+            <div class="right-header">
+
+                <div class="search">
+                    <input type="text" placeholder="tìm kiếm tại đây" class="search-txt">
+                    <i class="ti-search icon-search"></i>
+                </div>
+                <div class="login-container">
+                    <ul class="txt">
+                        <a href="#DangNhap" class="link">Đăng nhập</a>
+                        <a href="#DangKi" class="link">Đăng kí</a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+                <div class="add-movie" style="overflow-x: auto;">
+                    <h1>Thêm phim</h1>
+                    <form action="" >
+                        <table id="add-movie-table">
+                            <thead>
+                              <tr>
+                                <th>Tên phim</th>
+                                <th>Ảnh bìa</th>
+                                <th>Thời lượng</th>
+                                <th>Quốc gia</th>
+                                <th>Đạo diễn</th>
+                                <th>Diễn viên</th>
+                                <th>Ngày công chiếu</th>
+                                <th>Nội dung phim</th>
+                                <th>Phòng chiếu</th>
+                                <th>Thời gian chiếu</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                    <input type="text"  class="table-input" placeholder="Tên phim" required>
+                                </td>
+                                <td>
+                                    <input type="file" class="table-input" required>
+                                </td>
+                                <td>
+                                    <input type="number" class="table-input" name="duration" required>
+                                </td>
+                                <td>
+                                    <input type="text" class="table-input" id="country" required>
+                                </td>
+                                <td>
+                                    <textarea name="description" class="table-input" required></textarea>
+                                </td>
+                                <td>
+                                    <textarea name="" id="actors" class="table-input" required></textarea>
+                                </td>
+                                <td>
+                                    <input type="date" class="table-input" id="releaseDate" required>
+                                </td>
+                                <td>
+                                    <textarea name="" id="movie-conTent" class="table-input" required ></textarea>
+                                </td>
+                                <td>
+                                    <select id="room" class="table-input" required>
+                                        <option class="option-room" value="room-1">phòng 1</option>
+                                        <option class="option-room" value="room-2">phòng 2</option>
+                                        <option class="option-room" value="room-3">phòng 3</option>
+                                        <option class="option-room" value="room-4">phòng 4</option>
+
+                                    </select>
+                                </td>
+                                <td>
+                                    <textarea type="text" disabled  value="" id="txt-showTime" class="table-input"></textarea>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="addTime">
+                              <label for="showTime">chọn khung giờ chiếu</label>
+                              <input type="time" class="add-showTime" id="showTime">
+                              <button value="add" type="button" class="add-showTime" id="btn-addTime" onclick="addShowTime()" >+</button>
+                          </div>
+
+                          <div class="btnAdd-container">
+                              <button type="submit" id="btnAdd">Thêm phim</button>
+
+                          </div>
+                        </div>
+                        
+                    </form>
+        </div>
+        <footer>
+        <center><h2>CINEMATIC</h2></center>
+        <div class="list-icon">
+          <div class="icon-container">
+            <div class="icon">
+              <i class="item-icon ti-facebook"></i>
+            </div>
+            <p>Facebook</p>
+          </div>
+          <div class="icon-container">
+            <div class="icon">
+              <i class="item-icon ti-instagram"></i>
+            </div>
+            <p>Instagram</p>
+          </div>
+          <div class="icon-container">
+            <div class="icon">
+              <i class="item-icon ti-youtube"></i>
+            </div>
+            <p>Youtube</p>
+          </div>
+          <div class="icon-container">
+            <div class="icon">
+              <i class="item-icon ti-twitter"></i>
+            </div>
+            <p>Twitter</p>
+          </div>
+          <div class="icon-container">
+            <div class="icon">
+              <i class="item-icon ti-google"></i>
+            </div>
+            <p>Google</p>
+          </div>
+          <div class="icon-container">
+            <div class="icon">
+              <i class="item-icon ti-linkedin"></i>
+            </div>
+            <p>Linkedin</p>
+          </div>
+          <div class="icon-container">
+            <div class="icon">
+              <i class="item-icon ti-pinterest"></i>
+            </div>
+            <p>Pinterest</p>
+          </div>
+        </div>
+        <div class="text">
+          <center><p>We work with clients form all over. Get in touch with us!</p></center>
+          <div class="text-contact">
+            <div class="email-contact">
+              <i class="ic-contact ti-email"></i>
+              <p>nhom11@gmail.com</p>
+            </div>
+            <div class="phone-contact">
+              <i class="ti-mobile"></i>
+              <p class="phone-number">0888.8888.888</p>
+            </div>
+        </div>
+          </div>
+      </footer>
+    </div>
+</body>
+<script src="./addFilm.js"></script>
+</html>
